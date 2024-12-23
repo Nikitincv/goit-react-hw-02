@@ -1,13 +1,13 @@
-const Feedback = ({ reviews, partPos }) => {
-    const { good, neutral, bad } = reviews;
-    const totalFeedback = good + neutral + bad;
+const Feedback = ({ reviews, partPos, totalFeedback }) => {
+    const { good, neutral, bad,  } = reviews;
+
 
     return (
         <>
             <ul>
-                <li>Good: {reviews.good}</li>
-                <li>Neutral: {reviews.neutral}</li>
-                <li>Bad: {reviews.bad}</li>
+                <li>Good: {good}</li>
+                <li>Neutral: {neutral}</li>
+                <li>Bad: {bad}</li>
                 <li>Total: {totalFeedback}</li>
                 <li>Positive: {partPos}%</li>
             </ul>
